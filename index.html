@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Anek+Telugu:wght@200;300&family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <title>Ahorcado</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <header>
+            <div class="logo">
+                <img src="imagenes/logo.jpg" alt="">
+            </div>
+            <h1>AHORCADO</h1>
+        </header>
+    <div class="botones">
+            <button class="btn1" id="btn1">Iniciar Juego</button>
+            <button class="btn2" id="btn2">Agregar Nueva Palabra</button>
+        </div>
+    <div class="footerpage">
+        <h2>&#169; 2022 | Abril Micaela Rostro Fiorilo</h2>
+        <div class="contacto">
+        <h3>Contacto:<a href="mailto:rostrofioriloabril@gmail.com">Email</a><a href="">Proyectos</a><a href="">Código Fuente</a></h3>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="container2" id="container2">
+        <header>
+            <div class="logo1">
+                <img src="imagenes/logo.jpg" alt="">
+            </div>
+            <h1>AHORCADO</h1>
+        </header>
+        <div class="texto">
+            <label for="input">Máximo 10 caracteres</label>
+            <input type="text" placeholder="Elige una palabra" maxlength="10" id="inputguarda">
+            </div>
+            <div class="botonesc2">
+                <button class="btnguardar" id="btnguardar">Guardar y Empezar</button>
+                <button class="btncancelar" id="btncancelar">Cancelar</button>
+            </div> 
+            <div class="footerpage">
+                <h2>&#169; 2022 | Abril Micaela Rostro Fiorilo</h2>
+                <div class="contacto">
+                <h3>Contacto:<a href="mailto:rostrofioriloabril@gmail.com">Email</a><a href="">Proyectos</a><a href="">Código Fuente</a></h3>
+                </div>
+            </div>
+    </div>
+    
+    <div class="containercanvas" id="containercanvas">
+        <header>
+            <div class="logo2">
+                <img src="imagenes/logo.jpg" alt="">
+            </div>
+            <h1>AHORCADO</h1>
+        </header>
+        <div class="canva" id="canva">
+            <canvas width="100%" height="100%"></canvas>
+        </div>
+        
+        <div class="bloque" id="bloque">
+            
+        
+            <div class="containerword" id="containerword"></div>  
+            <div class="usedLetters" id="usedLetters"></div>  
+        <div class="botonescanvas">
+            <button class="desistir" id="desistir">Desisitir</button>
+            <button class="nuevo" id="nuevo">Nuevo Juego</button>
+            <button class="cancelar2" id="cancelar2">Cancelar</button>
+        </div>
+       
+          
+        </div>
+         <div class="footerpage">
+            <h2>&#169; 2022 | Abril Micaela Rostro Fiorilo</h2>
+            <div class="contacto">
+            <h3>Contacto:<a href="mailto:rostrofioriloabril@gmail.com">Email</a><a href="">Proyectos</a><a href="">Código Fuente</a></h3>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="containerfin" id="containerfin">
+        <header>
+            <div class="logo3">
+                <img src="imagenes/logo.jpg" alt="">
+            </div>
+            <h1>AHORCADO</h1>
+        </header>
+        <div class="containerfintexto">
+        <div class="respuesta">
+            <h2>¡Gracias por elegir nuestro juego!</h2>
+            <h3 id="respuestac"></h3>
+        </div>
+        <div class="botonescfin">
+            <button class="btnvolver" id="btnvolver">Volver a Intentarlo</button>
+            <button class="btncancelarfin" id="btncancelarfin">Cancelar</button>
+        </div> 
+    </div>
+        <div class="footerpage">
+            <h2>&#169; 2022 | Abril Micaela Rostro Fiorilo</h2>
+            <div class="contacto">
+            <h3>Contacto:<a href="mailto:rostrofioriloabril@gmail.com">Email</a><a href="">Proyectos</a><a href="">Código Fuente</a></h3>
+            </div>
+        </div> 
+   
+    </div>
+    <div class="containergane" id="containergane">
+        <header>
+            <div class="logo3">
+                <img src="imagenes/logo.jpg" alt="">
+            </div>
+
+        </header>
+
+        <div class="respuesta">
+            <h2>¡Felicidades, Ganaste!</h2>
+        </div>
+        <div class="botonesgane">
+            <button class="btnvolver2" id="btnvolverap">Volver al Principio</button>
+        </div> 
+        <div class="footerpage">
+            <h2>&#169; 2022 | Abril Micaela Rostro Fiorilo</h2>
+            <div class="contacto">
+            <h3>Contacto:<a href="mailto:rostrofioriloabril@gmail.com">Email</a><a href="">Proyectos</a><a href="">Código Fuente</a></h3>
+            </div>
+        </div> 
+   
+    </div>
+    <!-----FUNCIONES DEL CANVAS------>
+    <script src="main.js"></script>
+    <!-----VARIABLES Y FUNCIONES DE LOS CONTAINERS------>
+    <script src="main2.js"></script>
+    <!-----FUNCIONES DEL JUEGO------>
+    <script src="main3.js"></script>
+
+        
+</body>
+</html>
