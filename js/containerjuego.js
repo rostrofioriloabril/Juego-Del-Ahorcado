@@ -1,6 +1,7 @@
 
 var words= ['python','css','framework','bug','hosting','software','backend','frontend','fullstack','tester','java','php','ruby','javascript','sql','responsive','html','bootcamp']
 //wordContainer
+
 //btnIniciar
 
 const usedLettersElement = document.getElementById('usedLetters');
@@ -10,7 +11,7 @@ let mistakes;//errores
 let hits;//aciertos
 
 
-let partes = {
+let partes ={
     
     0:aparecerCabeza,
     1:aparecerCuerpo,
@@ -26,7 +27,7 @@ let wrongLetter = () => {
    
     aparecerCanvas()
     let miParte = partes[mistakes]
-    miParte(); 
+    miParte();
     mistakes++;
     if(mistakes === 8){
 
@@ -103,6 +104,8 @@ const drawMan = () => {
     aparecerCanvas();
 }
 const starGame = ()=> {
+    desaparecerPartes();
+    desaparecerLetras();
     usedLetters = [];
     hits = 0;
     mistakes = 0;
@@ -117,7 +120,6 @@ const starGame = ()=> {
     drawWord();
     document.addEventListener('keydown', letterEvent);
     console.log(selectedWord);
-    
 }
 
 btnIniciar.addEventListener('click', starGame);
@@ -125,49 +127,14 @@ btnNuevo.addEventListener('click',starGame);
 btnVolverAJugar.addEventListener('click',starGame);
 
 
-//----------------------------------------//
-//-------------ENLAZAMOS EL INPUT-------------------//
-//----------------------------------------//
-const selectedWordInput = () => {
-    let word = inputPalabra.value.toUpperCase();
-    selectedWord = word.split('');
-}   
-const starGameWithWord = ()=> {
-    usedLetters = [];
-    hits = 0;
-    mistakes = 0;
-    usedLettersElement.innerhtml = '';
-    wordContainer.innerHTML = '';
-    container1.style.display='none';
-    containerJuego.style.display='flex'
-    containerfinal.style.display='none'
-    drawMan();
-    iniciarJuego();
-    selectedWordInput();
-    drawWord();
-    document.addEventListener('keydown', letterEvent);
-    console.log(selectedWord);
-}
-    
 
-function verificarpalabra(){
-    if(inputPalabra.value == ''){//VERIFICAMOS QUE HAYA TEXTO
-        alert('Debe  agregar, por lo menos, una palabra');
-        return;
-    }else{
-        for(var i= 0; i<=acentos.length; i++){
-            if(inputPalabra.value.includes(acentos[i])){
-                alert('No está permitido añadir acentos ni caracteres especiales')
-                inputPalabra.value='';
-                inputPalabra.focus();
-                return;
-            }
-        }  
-    }
-    
-    starGameWithWord();
-}
-btn_Guardar.onclick = verificarpalabra;
+
+
+
+
+
+
+
 
 
 
@@ -181,7 +148,6 @@ btn_Guardar.onclick = verificarpalabra;
 
 
 //----------------------------------------//
-
 
 function reset (){
     usedLetters = [];
@@ -204,3 +170,4 @@ btn_Cancelar.onclick = cancelar;
 btnCancelar2.onclick = cancelar;
 btnCancelar3.onclick = cancelar;
 volverAlInicio.onclick = cancelar;
+btnDesistir.onclick = endGame;

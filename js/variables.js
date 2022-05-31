@@ -10,7 +10,7 @@ function mostrarAgregarPalabra(){
     containerpalabras.style.display='block';
     inputPalabra.focus();
 }
-function iniciarJuego(){ //se usa en main3
+function iniciarJuego(){ //se usa en el container juego
     agrupacanva.style.display='none'
     container1.style.display='none';
     containerpalabras.style.display='none'
@@ -31,15 +31,6 @@ var inputPalabra = document.getElementById('inputguarda');
 //const x = inputPalabra;
 ///////////////////////////////////////////
 ////////////     FUNCIONES   /////////////
-function cancelar(){
-    containerJuego.style.display='none'
-    containerpalabras.style.display='none';
-    containerfinal.style.display='none';
-    containerGane.style.display='none';
-    container1.style.display='block'
-    bloqueText.style.width='100%'
-    reset();
-}
 
 var acentos=[
     'á','é','í','ó','ú','à','è','ì','ò','ù','!','"','#','$','%','()','*', '+', '-','.','/', '0', '1', '2','3', '4', '5', '6', '7', '8', '9', ':',';','=','?','¿','@','[','^','|','}','{', ' ~',']', '´'
