@@ -2,6 +2,7 @@
 function desaparecerLetras(usedLetters){
     usedLettersElement.innerHTML= '';
     wordContainer.innerHTML = '';
+    inputParaResponsive.innerHTML='';
     return usedLetters= '';
     
 };

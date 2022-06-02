@@ -11,11 +11,12 @@ function mostrarAgregarPalabra(){
     inputPalabra.focus();
 }
 function iniciarJuego(){ //se usa en el container juego
-    agrupacanva.style.display='none'
+    agrupacanva.style.display='none';
     container1.style.display='none';
-    containerpalabras.style.display='none'
-    containerJuego.style.display='flex'
-    bloqueText.style.width='100%'
+    containerpalabras.style.display='none';
+    containerJuego.style.display='flex';
+    bloqueText.style.width='100%';
+    inputParaResponsive.focus();
 }
 
 btnAgregar.onclick = mostrarAgregarPalabra;
@@ -48,13 +49,15 @@ var wordContainer = document.getElementById('containerword');//van los span
 var btnDesistir = document.getElementById('desistir');
 var btnNuevo= document.getElementById('nuevo');
 var btnCancelar2 = document.getElementById('cancelar2');
+var inputParaResponsive = document.getElementById("inputResponsive")
 ///////////////////////////////////////////
 ////////////     FUNCIONES   /////////////
 
 
 function aparecerCanvas(){//la funcion se usa en main3
+    agrupacanva.style.width='100%'
     agrupacanva.style.display='flex'
-    bloqueText.style.width='60%'
+    bloqueText.style.width='100%'
     wordContainer.style.width='100%'
 }
 
