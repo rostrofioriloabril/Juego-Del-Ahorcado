@@ -36,7 +36,7 @@ let wrongLetter = () => {
         
 }
 const winner = () => {
-    document.removeEventListener('keydown', letterEvent);
+    document.removeEventListener('keyup keypress', letterEvent);
     containerJuego.style.display='none'
     container.style.display='none'
     containerpalabras.style.display='none'
@@ -44,7 +44,7 @@ const winner = () => {
     containerGane.style.display="block"
 }
 const endGame = () => {
-    document.removeEventListener('keydown', letterEvent);
+    document.removeEventListener('keyup keypress', letterEvent);
     containerJuego.style.display='none'
     container.style.display='none'
     containerpalabras.style.display='none'
@@ -118,7 +118,7 @@ const starGame = ()=> {
     iniciarJuego()
     selectRandomWord();
     drawWord();
-    document.addEventListener('keydown', letterEvent);
+    document.addEventListener('keyup keypress', letterEvent);
     console.log(selectedWord);
 }
 
