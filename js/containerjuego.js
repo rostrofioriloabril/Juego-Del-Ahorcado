@@ -1,12 +1,12 @@
 
-var words= ['python','css','framework','bug','hosting','software','backend','frontend','fullstack','tester','java','php','ruby','javascript','sql','responsive','html','bootcamp']
+var words= ['python','css','framework','bug','hosting','software','backend','frontend','fullstack','tester','java','php','ruby','javascript','sql','responsive','html','bootcamp'];
 //wordContainer
 
 //btnIniciar
 const usedLettersElement = document.getElementById('usedLetters');
 const inputGame = document.getElementById('inputResponsive')
 let selectedWord;//selectpalabra
-let usedLetters = inputParaResponsive;//letrasUsadas
+let usedLetters;//letrasUsadas
 let mistakes;//errores
 let hits;//aciertos
 
@@ -85,9 +85,6 @@ const letterEvent = event => {
         letterInput(newLetter);  
         return inputGame.value='';
     };
-    if (inputGame.value == usedLetters){
-        input.endGame.value="";
-    }
     }
         
 };

@@ -1129,6 +1129,7 @@ span:first-child{
     }
     .botonescanvas .cancelar2{
         width: 40%;
+        margin-top: -0.4em;
         text-align: center;
     }
     .containerword{
