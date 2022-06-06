@@ -1,7 +1,7 @@
 
 var words= ['python','css','framework','bug','hosting','software','backend','frontend','fullstack','tester','java','php','ruby','javascript','sql','responsive','html','bootcamp'];
 //wordContainer
-
+var letras = [];
 //btnIniciar
 const usedLettersElement = document.getElementById('usedLetters');
 const inputGame = document.getElementById('inputResponsive')
@@ -74,6 +74,7 @@ const letterInput = letter => {
     }
     addLetter(letter);
     usedLetters.push(letter);
+    letras.push(inputGame.value);
 };
 
 const letterEvent = event => {
@@ -85,6 +86,10 @@ const letterEvent = event => {
         letterInput(newLetter);  
         return inputGame.value='';
     };
+    if(event.target.value == letras[letras.length-1]){
+        event.target.value='';
+        return event.target.value;
+    }
     }
         
 };
