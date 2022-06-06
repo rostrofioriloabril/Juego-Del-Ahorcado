@@ -86,7 +86,7 @@ header h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0.6em;
+    margin-bottom: 0.4em;
     opacity: .7;
     flex-direction: column;
 
@@ -1007,7 +1007,7 @@ span:first-child{
         width: 96%;
         flex-direction: row;
         margin: 0px;
-        margin-top: 27.4em;
+        margin-top: 28.4em;
         margin-left: 2%;
         margin-right: 2%;
         justify-content: center;
