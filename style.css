@@ -143,6 +143,7 @@ header h1 {
 .container2 h1{
     margin-top: -10px;
     font-size: 7em;
+    text-shadow: 3px 6px 1px #000;
 }
 .container2 .texto{
     display: flex;
@@ -231,7 +232,7 @@ header h1 {
 .canva{
     margin-top: -10em;
     width: 100%;
-    height: 300px;
+    height: 350px;
     display: flex;
     justify-content: center;
     display: none;
@@ -254,14 +255,16 @@ header h1 {
     align-content: center ;
 }
 .responsive{
+    position: absolute;
     width: 100%;
     background: transparent;
     border-style: none;
     color: transparent;
     text-align: center;
     margin-top: -2em;
-    height: 70px;
+    height: 100%;
     font-size: 3em;
+    top: 0;
 }
 .responsive:active{
     outline: none;
@@ -313,7 +316,7 @@ span:first-child{
     display: flex;
     flex-direction: column;
     right: 0;
-    margin-top: -26em;
+    margin-top: -30em;
     margin-right: 2em;
     height: auto;
     align-items: center;
@@ -364,11 +367,15 @@ span:first-child{
     width: 100%;
     text-align: center;
     margin-top: -0.5em;
+}
+.containerfin .respuesta h2 {
+    border: 1px solid #fff;
     margin-bottom: 1em;
 }
 .respuesta h2{
     font-size: 2.4em;
     color: #fff;
+    margin-bottom: 0.5em;
 }
 .respuesta h3{
     font-size: 2.4em;
@@ -417,7 +424,7 @@ span:first-child{
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin-top: -0.5em;
+    margin-top: 0em;
 }
 .botonesgane {
     text-align: center;
@@ -455,7 +462,7 @@ span:first-child{
         flex-direction: row;
         margin: 0px;
         flex-wrap: wrap;
-        margin-top: 15.6em;
+        margin-top: 25.6em;
         margin-left: 2%;
         margin-right: 2%;
         justify-content: center;
@@ -523,24 +530,55 @@ span:first-child{
         padding: 0;
     }
 
+
+
+    /**----------------------------------------*/
+    .containercanvas h1{
+        font-size: 4.5em;
+        margin-top: 0;
+    }
+    .canva {
+        width: 100%;
+    }
+    .canva canvas {
+        width: 100%;
+    }
+    .botonescanvas{
+        position: relative;
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        justify-content: center;
+    }
+    .botonescanvas button {
+        font-size: 1.2em;
+        width:33%;
+    }
+
+
+    /**----------------------------------------*/
     .containerfin{
         background-image: url(imagenes/perdiste6.jpg);
         background-size: 100% 100%;
     
     }
     .containerfin h1 {
-        font-size: 5em;
+        font-size: 4.5em;
         margin-top: -0.4em;
     }
     .containerfintexto{
         padding-top: 0em;
         padding-left: 0em;
-        margin-top: 1em;
+        margin-top: 10em;
     }
     .respuesta{
         width: 100%;
         margin-top: 12em;
-        margin-bottom: 0.2em;
+        margin-bottom: 0.5em;
     }
     .containerfin .respuesta h2 {
         display: none;
@@ -575,8 +613,8 @@ span:first-child{
     }
     .containergane .respuesta h2 {
         font-size: 1.2em;
-        margin-top: -0.6em;
-        margin-bottom: 8.5em;
+        margin-top: 1em;
+        margin-bottom: 11em;
     }
     .botonesgane button {
         width: 70%;
@@ -602,7 +640,7 @@ span:first-child{
         flex-direction: row;
         margin: 0px;
         flex-wrap: wrap;
-        margin-top: 14.6em;
+        margin-top: 23.6em;
         margin-left: 2%;
         margin-right: 2%;
         justify-content: center;
@@ -668,11 +706,42 @@ span:first-child{
         height: 50px;
     }
     .botonesc2 .btncancelar{
-        margin-top: 12em;
+        margin-top: 22em;
         width: 40%;
         padding: 0px 0px;
     }
 
+        /**----------------------------------------*/
+        .containercanvas h1{
+            font-size: 4.5em;
+            margin-top: 0;
+        }
+        .canva {
+            margin-top: -14em;
+            width: 100%;
+        }
+        .canva canvas {
+            width: 100%;
+        }
+        .botonescanvas{
+            position: relative;
+            margin-top: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-right: 0;
+            text-align: center;
+            justify-content: center;
+        }
+        .botonescanvas button {
+            font-size: 1.2em;
+            width:33%;
+        }
+    
+    
+
+    /**************************-************/
     .containerfin{
         background-image: url(imagenes/perdiste5.jpg);
         background-size: 100% 100%;
@@ -685,12 +754,12 @@ span:first-child{
     .containerfintexto{
         padding-top: 0em;
         padding-left: 0em;
-        margin-top: 3em;
+        margin-top: 12em;
     }
     .respuesta{
         width: 100%;
         margin-top: 11em;
-        margin-bottom: 0.2em;
+        margin-bottom: 0.5em;
     }
     .containerfin .respuesta h2 {
         display: none;
@@ -726,12 +795,12 @@ span:first-child{
     }
     .containergane .respuesta h2 {
         font-size: 1.3em;
-        margin-top: -0.6em;
-        margin-bottom: 8.5em;
+        margin-top: 0.5em;
+        margin-bottom: 10em;
     }
     .botonesgane button {
         width: 70%;
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
 }
 
@@ -754,7 +823,7 @@ span:first-child{
         flex-direction: row;
         margin: 0px;
         flex-wrap: wrap;
-        margin-top: 14em;
+        margin-top: 24em;
         margin-left: 2%;
         margin-right: 2%;
         justify-content: center;
@@ -799,6 +868,10 @@ span:first-child{
         padding: 0.3em;
     }
 
+
+    /******************************/
+
+
     .containerfin{
         background-image: url(imagenes/perdiste4.jpg);
         background-size: 100% 100%;
@@ -809,9 +882,13 @@ span:first-child{
         margin-top: -0.3em;
     }
     .containerfintexto{
+        width: 98%;
         padding-top: 0em;
         padding-left: 0em;
-        margin-top: 1em;
+        margin-right: 0;
+        margin-top: 11em;
+        margin-right: 1%;
+        margin-left: 1%;
     }
     .respuesta{
         width: 100%;
@@ -848,32 +925,57 @@ span:first-child{
         background-size: 100% 100%;
     }
     .containergane .respuesta h2 {
-        font-size: 1.5em;
-        margin-top: -0.6em;
+        font-size: 1.99em;
+        margin-top: -0.5em;
         margin-bottom: 7.5em;
     }
     .botonesgane button {
-        width: 55%;
+        font-size: 1.7em;
+        width: 65%;
     }
 
 
     
     /*-----------------------------------------------------*/
-    .containercanvas h1{
-        margin-top: 0em;
-        font-size: 5em;
+
+
+     /**----------------------------------------*/
+     .containercanvas h1{
+        font-size: 4.5em;
+        margin-top: 0;
     }
-    .canva{
-        margin-top: -10em;
-        width: 100%;
-        height: 300px;
+    .canva {
+        margin-top: -15em;
+        width: 96%;
         display: flex;
+        margin-left: 5%;
+    }
+    .canva canvas {
+        width: 100%;
+        height: 108%;
+    }
+    .botonescanvas{
+        position: relative;
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: center;
         justify-content: center;
-        display: none;
-        
+    }
+    .botonescanvas button {
+        font-size: 1.5em;
+        width:50%;
+    }
+    .botonescanvas .cancelar2{
+        width: 40%;
+        text-align: center;
     }
     .containerword{
-        margin-top: -6em;
+        margin-top: -10em;
         margin-bottom: 0px;
     }
     .containerword span {
@@ -882,28 +984,10 @@ span:first-child{
     }
     .usedLetters{
         font-size: 2.2em;
-        margin-top: -0.4em;
+        margin-top: -1.4em;
         
     }
-    .botonescanvas{
-        position: relative;
-        flex-direction: row;
-        margin: -3.5em 0em 0em 0em;
-    }
-    .botonescanvas button{
-        width: 5em;
-        font-size: 1.5em;
-    }
-    .botonescanvas .cancelar2 {
-        display: none;
-    }
-    .botonescanvas .desistir{
-        margin-left: 0.4em;
-        margin-right: 5em;
-    }
-    .botonescanvas .nuevo {
-        margin-right: 0.4em;
-    }
+   
 }
 
 
@@ -923,7 +1007,7 @@ span:first-child{
         width: 96%;
         flex-direction: row;
         margin: 0px;
-        margin-top: 17.4em;
+        margin-top: 27.4em;
         margin-left: 2%;
         margin-right: 2%;
         justify-content: center;
@@ -959,9 +1043,13 @@ span:first-child{
         margin-top: -0.3em;
     }
     .containerfintexto{
+        width: 98%;
         padding-top: 0em;
         padding-left: 0em;
-        margin-top: 1em;
+        margin-right: 0;
+        margin-top: 11em;
+        margin-right: 1%;
+        margin-left: 1%;
     }
     .respuesta{
         width: 100%;
@@ -999,11 +1087,12 @@ span:first-child{
     }
     .containergane .respuesta h2 {
         font-size: 2em;
-        margin-top: -0.6em;
-        margin-bottom: 5.5em;
+        margin-top: -0em;
+        margin-bottom: 7.5em;
     }
     .botonesgane button {
         width: 55%;
+        font-size: 1.8em;
     }
 
 
@@ -1012,18 +1101,38 @@ span:first-child{
     .containercanvas h1{
         font-size: 5.5em;
     }
-    .canva{
-        margin-top: -10em;
-        width: 99%;
-        margin-right: 1em;
-        height: 300px;
+    .canva {
+        margin-top: -15em;
+        width: 96%;
         display: flex;
+        margin-left: 5%;
+    }
+    .canva canvas {
+        width: 78%;
+        height: 111%;
+    }
+    .botonescanvas{
+        position: relative;
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: center;
         justify-content: center;
-        display: none;
-        
+    }
+    .botonescanvas button {
+        font-size: 1.5em;
+        width:50%;
+    }
+    .botonescanvas .cancelar2{
+        width: 40%;
+        text-align: center;
     }
     .containerword{
-        margin-top: -6em;
+        margin-top: -10em;
         margin-bottom: 0px;
     }
     .containerword span {
@@ -1031,17 +1140,11 @@ span:first-child{
         
     }
     .usedLetters{
-        font-size: 2em;
-        margin-top: -0.5em;
+        font-size: 2.2em;
+        margin-top: -1.4em;
         
     }
-    .botonescanvas{
-        margin-right: 0.5em;
-    }
-    .botonescanvas button{
-        width: 5em;
-        font-size: 1.5em;
-    }
+   
 
 }
 
@@ -1056,7 +1159,7 @@ span:first-child{
         width: 96%;
         flex-direction: row;
         margin: 0px;
-        margin-top: 17em;
+        margin-top: 28em;
         margin-left: 2%;
         margin-right: 2%;
         justify-content: center;
@@ -1079,16 +1182,34 @@ span:first-child{
         font-size: 5.5em;
     }
     .canva{
-        margin-top: -10em;
-        width: 100%;
-        height: 300px;
+        margin-top: -15em;
+    }
+    .canva canvas {
+        width: 69%;
+        height: 110%;
+    }
+    .botonescanvas{
+        position: relative;
+        margin-top: 0;
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: center;
         justify-content: center;
-        display: none;
-        
+    }
+    .botonescanvas button {
+        font-size: 1.5em;
+        width:50%;
+    }
+    .botonescanvas .cancelar2{
+        width: 40%;
+        text-align: center;
     }
     .containerword{
-        margin-top: -6em;
+        margin-top: -10em;
         margin-bottom: 0px;
     }
     .containerword span {
@@ -1096,17 +1217,11 @@ span:first-child{
         
     }
     .usedLetters{
-        font-size: 2em;
-        margin-top: -0.5em;
+        font-size: 2.2em;
+        margin-top: -1.4em;
         
     }
-    .botonescanvas{
-        margin-right: 0.5em;
-    }
-    .botonescanvas button{
-        width: 5em;
-        font-size: 1.5em;
-    }
+   
 
 
     /*-----------------------------------------------------*/
@@ -1117,8 +1232,9 @@ span:first-child{
     
     }
     .containerfintexto{
+        margin-top: 3em;
         padding-top: 0em;
-        padding-left: 16em;
+        padding-left: 17em;
     }
     .containerfin .respuesta h2 {
         display: none;
@@ -1146,8 +1262,8 @@ span:first-child{
     }
     .containergane .respuesta h2 {
         font-size: 2em;
-        margin-top: -0.2em;
-        margin-bottom: 5em;
+        margin-top: 0.4em;
+        margin-bottom: 7.4em;
     }
    
 }
@@ -1159,6 +1275,7 @@ span:first-child{
     }
     .botones{
         margin-left: 0.1em;
+        margin-top: 6em;
     }
     .container2{
         background-image: url(imagenes/secretoresponsive3.jpg);
@@ -1170,7 +1287,8 @@ span:first-child{
     
     }
     .containerfintexto{
-        padding-top: 0.5em;
+        margin-top: 3em;
+        padding-top: 0em;
         padding-left: 21em;
     }
     .containerfintexto .respuesta h2 {
@@ -1200,9 +1318,15 @@ span:first-child{
     }
     .containergane .respuesta h2 {
         font-size: 2em;
-        margin-top: -0.2em;
-        margin-bottom: 5em;
+        margin-top: 0.5em;
+        margin-bottom: 7.3em;
     }
+
+
+    .botonescanvas{
+        margin-top: -31em;
+    }
+
    
 }
 
@@ -1214,6 +1338,9 @@ span:first-child{
 }
 header h1 {
     font-size: 6.5em;
+}
+.botones{
+    margin-top: 5em;
 }
 .botones button{
     font-size: 1.5em;
@@ -1230,9 +1357,14 @@ header h1 {
     background-size: 100% 100%;
 }
 .containerfintexto{
-    margin-top: -4em;
+    margin-top: 3em;
     padding-top: 0em;
     padding-left: 25em;
+}
+.containerfintexto h2 {
+    margin-bottom: 0.6em;
+    border: 1px solid #fff;
+    font-size: 1.5em;
 }
 .botonescfin{
     width: 100%;
@@ -1253,27 +1385,51 @@ header h1 {
     background-size: 100% 110%;
 }
 .containergane .respuesta h2 {
-    font-size: 1.6em;
-    margin-bottom: 6.8em;
-}
+    margin-top: 0.6em;
+    font-size: 2em;
+    margin-bottom: 7.8em;
 }
 
-@media only screen and (min-width:801px) and (max-width:930px){
+
+
+
+}
+
+@media only screen and (min-width:801px) and (max-width:999px){
     .container{
         background-image: url(imagenes/ejemplo.jpg);
         background-size: 100% 100%;
     }
-    .botones{
-        margin-top: 1em;
-    }
+  
     .container2{
         background-image: url(imagenes/secretoresponsive.jpg);
         background-size: 100% 100%;
     }
     /*----------------------------------------------------------------*/
+    .containerfin{
+        background-size: 100% 100%;
+    }
     .containerfintexto{
         margin-right: 1%;
-        padding-left: 26em;
-        margin-top: -2em;
+        padding-left: 25em;
+        margin-top: 1em;
+        text-align: center;
     }
+    .containerfintexto h2 {
+        margin-bottom: 0.6em;
+        border: 1px solid #fff;
+        font-size: 1.5em;
+    }
+    .botonescfin{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .botoncfin button {
+        margin-top: 1em;
+    }
+
 }

@@ -3,10 +3,10 @@ var words= ['python','css','framework','bug','hosting','software','backend','fro
 //wordContainer
 
 //btnIniciar
-
 const usedLettersElement = document.getElementById('usedLetters');
+const inputGame = document.getElementById('inputResponsive')
 let selectedWord;//selectpalabra
-let usedLetters;//letrasUsadas
+let usedLetters = inputParaResponsive;//letrasUsadas
 let mistakes;//errores
 let hits;//aciertos
 
@@ -36,7 +36,7 @@ let wrongLetter = () => {
         
 }
 const winner = () => {
-    document.removeEventListener('keyup keypress', letterEvent);
+    document.removeEventListener('change', letterEvent);
     containerJuego.style.display='none'
     container.style.display='none'
     containerpalabras.style.display='none'
@@ -44,7 +44,7 @@ const winner = () => {
     containerGane.style.display="block"
 }
 const endGame = () => {
-    document.removeEventListener('keyup keypress', letterEvent);
+    document.removeEventListener('change', letterEvent);
     containerJuego.style.display='none'
     container.style.display='none'
     containerpalabras.style.display='none'
@@ -77,11 +77,18 @@ const letterInput = letter => {
 };
 
 const letterEvent = event => {
-    let newLetter = event.key.toUpperCase();
+    if(event.target.value) {
+        console.log(event.target.value)
+    let value = event.target.value;
+    let newLetter = value.toUpperCase();
     if(newLetter.match(/^[a-zñ]$/i) && !usedLetters.includes(newLetter)){ //si laletra esta entre la a y la z y si fue usada la letra
         letterInput(newLetter);  
+        return inputGame.value='';
     };
-        
+    if (inputGame.value == usedLetters){
+        input.endGame.value="";
+    }
+    }
         
 };
 const drawWord = () => {
@@ -118,7 +125,7 @@ const starGame = ()=> {
     iniciarJuego()
     selectRandomWord();
     drawWord();
-    document.addEventListener('keyup keypress', letterEvent);
+    inputGame.addEventListener('input', letterEvent);
     console.log(selectedWord);
 }
 
